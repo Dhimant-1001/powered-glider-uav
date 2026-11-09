@@ -1,0 +1,317 @@
+{
+ "turn": {
+  "phi30": {
+   "V_max_14m": 6.27,
+   "V_max_16m": 6.71,
+   "n": 1.155,
+   "WS_max_14m_CL1": 14.0,
+   "WS_max_14m_CL1_hot": 13.6
+  },
+  "phi35": {
+   "V_max_14m": 6.89,
+   "V_max_16m": 7.37,
+   "n": 1.221,
+   "WS_max_14m_CL1": 16.0,
+   "WS_max_14m_CL1_hot": 15.6
+  },
+  "phi40": {
+   "V_max_14m": 7.51,
+   "V_max_16m": 8.04,
+   "n": 1.305,
+   "WS_max_14m_CL1": 17.8,
+   "WS_max_14m_CL1_hot": 17.3
+  },
+  "phi45": {
+   "V_max_14m": 8.15,
+   "V_max_16m": 8.73,
+   "n": 1.414,
+   "WS_max_14m_CL1": 19.4,
+   "WS_max_14m_CL1_hot": 18.8
+  },
+  "phi50": {
+   "V_max_14m": 8.83,
+   "V_max_16m": 9.47,
+   "n": 1.556,
+   "WS_max_14m_CL1": 20.6,
+   "WS_max_14m_CL1_hot": 20.1
+  }
+ },
+ "bounds_N_m2": {
+  "launch_7ms": 20.2,
+  "launch_6ms": 14.8,
+  "turn40_14m": 17.8,
+  "turn40_14m_hot": 17.3,
+  "eff_LD75pct_at_8ms": 14.8,
+  "build_min": 13.7,
+  "CL_LDmax": 0.939
+ },
+ "turn_sensitivity_V7p5": {
+  "phi40_p40_calm": 14.3,
+  "phi40_p60_calm": 14.0,
+  "phi40_p90_calm": 13.8,
+  "phi40_p60_cross1.0": 17.6,
+  "phi40_p60_cross1.0_upwindturn": 11.0,
+  "phi40_p60_cross1.5": 19.4,
+  "phi40_p60_cross1.5_upwindturn": 9.7,
+  "phi40_p60_cross2.0": 21.2,
+  "phi40_p60_cross2.0_upwindturn": 8.4,
+  "phi40_p60_cross3.0": 24.7,
+  "phi40_p60_cross3.0_upwindturn": 6.2,
+  "phi45_p40_calm": 12.5,
+  "phi45_p60_calm": 11.9,
+  "phi45_p90_calm": 11.7,
+  "phi45_p60_cross1.0": 15.2,
+  "phi45_p60_cross1.0_upwindturn": 9.3,
+  "phi45_p60_cross1.5": 16.8,
+  "phi45_p60_cross1.5_upwindturn": 8.1,
+  "phi45_p60_cross2.0": 18.4,
+  "phi45_p60_cross2.0_upwindturn": 7.1,
+  "phi45_p60_cross3.0": 21.7,
+  "phi45_p60_cross3.0_upwindturn": 5.2,
+  "phi50_p40_calm": 11.1,
+  "phi50_p60_calm": 10.3,
+  "phi50_p90_calm": 9.9,
+  "phi50_p60_cross1.0": 13.3,
+  "phi50_p60_cross1.0_upwindturn": 7.9,
+  "phi50_p60_cross1.5": 14.8,
+  "phi50_p60_cross1.5_upwindturn": 6.9,
+  "phi50_p60_cross2.0": 16.3,
+  "phi50_p60_cross2.0_upwindturn": 6.0,
+  "phi50_p60_cross3.0": 19.2,
+  "phi50_p60_cross3.0_upwindturn": 4.4
+ },
+ "design_point": {
+  "WS_N_m2": 16.0,
+  "WS_g_dm2": 16.3,
+  "Vs": 5.42,
+  "Vs_hot": 5.49,
+  "Vs_CL0p9": 5.71,
+  "V_cruise": 8.0,
+  "CL_cruise": 0.459,
+  "LD_cruise_parab": 12.3,
+  "LDmax_parab": 15.6,
+  "V_LDmax": 5.59,
+  "CL_LDmax": 0.939,
+  "V_turn": 7.5,
+  "phi": 40.0,
+  "n": 1.305,
+  "R": 6.83,
+  "CL_turn": 0.681,
+  "turn_margin_V_over_Vsturn": 1.212,
+  "turn_lat_calm": 13.97,
+  "turn_time": 3.59,
+  "turn_lat_crosswind3": 24.75,
+  "turn_along_wind3": 15.52,
+  "launch_margin": 1.29,
+  "launch_margin_6ms": 1.11,
+  "Re_cruise": 70588,
+  "Re_stall": 47808
+ },
+ "mass_budget": {
+  "AR9_b1.2": {
+   "S_m2": 0.16,
+   "c": 0.133,
+   "m_at_WSd_g": 260,
+   "m_at_14gdm2": 224,
+   "m_at_18gdm2": 288
+  },
+  "AR9_b1.4": {
+   "S_m2": 0.218,
+   "c": 0.156,
+   "m_at_WSd_g": 355,
+   "m_at_14gdm2": 304,
+   "m_at_18gdm2": 391
+  },
+  "AR9_b1.6": {
+   "S_m2": 0.284,
+   "c": 0.178,
+   "m_at_WSd_g": 463,
+   "m_at_14gdm2": 398,
+   "m_at_18gdm2": 512
+  },
+  "AR9_b1.8": {
+   "S_m2": 0.36,
+   "c": 0.2,
+   "m_at_WSd_g": 587,
+   "m_at_14gdm2": 504,
+   "m_at_18gdm2": 648
+  },
+  "AR11_b1.2": {
+   "S_m2": 0.131,
+   "c": 0.109,
+   "m_at_WSd_g": 213,
+   "m_at_14gdm2": 183,
+   "m_at_18gdm2": 235
+  },
+  "AR11_b1.4": {
+   "S_m2": 0.178,
+   "c": 0.127,
+   "m_at_WSd_g": 290,
+   "m_at_14gdm2": 249,
+   "m_at_18gdm2": 320
+  },
+  "AR11_b1.6": {
+   "S_m2": 0.233,
+   "c": 0.145,
+   "m_at_WSd_g": 379,
+   "m_at_14gdm2": 325,
+   "m_at_18gdm2": 418
+  },
+  "AR11_b1.8": {
+   "S_m2": 0.295,
+   "c": 0.164,
+   "m_at_WSd_g": 480,
+   "m_at_14gdm2": 412,
+   "m_at_18gdm2": 530
+  },
+  "AR13_b1.2": {
+   "S_m2": 0.111,
+   "c": 0.092,
+   "m_at_WSd_g": 180,
+   "m_at_14gdm2": 155,
+   "m_at_18gdm2": 199
+  },
+  "AR13_b1.4": {
+   "S_m2": 0.151,
+   "c": 0.108,
+   "m_at_WSd_g": 245,
+   "m_at_14gdm2": 211,
+   "m_at_18gdm2": 271
+  },
+  "AR13_b1.6": {
+   "S_m2": 0.197,
+   "c": 0.123,
+   "m_at_WSd_g": 321,
+   "m_at_14gdm2": 275,
+   "m_at_18gdm2": 354
+  },
+  "AR13_b1.8": {
+   "S_m2": 0.249,
+   "c": 0.138,
+   "m_at_WSd_g": 406,
+   "m_at_14gdm2": 348,
+   "m_at_18gdm2": 448
+  }
+ },
+ "power": {
+  "P_W_cruise_Wkg": 14.1,
+  "P_W_turn40_Wkg": 14.3,
+  "P_W_climb2_Wkg": 57.7,
+  "P_W_climb3_Wkg": 79.5,
+  "T_W_dynamic_launch_min": 0.29,
+  "eta_total_assumed": 0.45
+ },
+ "pattern": {
+  "usable_length": 90.0,
+  "straight_leg": 70.9,
+  "t_straight": 8.86,
+  "t_turn": 3.59,
+  "lap_time": 24.9,
+  "laps_60s": 2.41,
+  "laps_120s": 4.82,
+  "frac_time_banked": 0.29,
+  "climb_angle_deg": 14.5,
+  "t_to_20m": 10.0,
+  "ground_dist_to_20m_calm": 77.5,
+  "ground_dist_to_20m_headwind3": 47.5
+ },
+ "landing": {
+  "clean_LD12_h5": 60.0,
+  "clean_LD12_h10": 120.0,
+  "parab_LD_h5": 78.2,
+  "parab_LD_h10": 156.5,
+  "spoileron_LD7_h5": 35.0,
+  "spoileron_LD7_h10": 70.0,
+  "crow_LD5_h5": 25.0,
+  "crow_LD5_h10": 50.0,
+  "V_approach": 7.04,
+  "V_touchdown": 5.96,
+  "float_m": 10.8,
+  "ground_roll_m": 4.5,
+  "ground_roll_headwind3_m": 1.1,
+  "sink_clean_LD12": 0.59,
+  "sink_spiral_phi30": 0.93,
+  "total_from_5m_spoileron": 50.3,
+  "total_from_5m_clean": 75.3
+ },
+ "gust": {
+  "U1.0": {
+   "dn": 0.52,
+   "dCL": 0.237,
+   "Kg": 0.376,
+   "CL_peak": 0.696
+  },
+  "U1.5": {
+   "dn": 0.78,
+   "dCL": 0.356,
+   "Kg": 0.376,
+   "CL_peak": 0.815
+  },
+  "U2.0": {
+   "dn": 1.03,
+   "dCL": 0.475,
+   "Kg": 0.376,
+   "CL_peak": 0.933
+  }
+ },
+ "roll": {
+  "Cl_da": 0.341,
+  "Cl_p": -0.842,
+  "table": {
+   "da12_b1.4": {
+    "pb2V": 0.059,
+    "p_degps": 38.9,
+    "t_0_to_40": 1.03,
+    "t_40_to_m40": 2.06
+   },
+   "da12_b1.6": {
+    "pb2V": 0.059,
+    "p_degps": 34.0,
+    "t_0_to_40": 1.18,
+    "t_40_to_m40": 2.35
+   },
+   "da12_b1.8": {
+    "pb2V": 0.059,
+    "p_degps": 30.2,
+    "t_0_to_40": 1.32,
+    "t_40_to_m40": 2.65
+   },
+   "da15_b1.4": {
+    "pb2V": 0.074,
+    "p_degps": 48.6,
+    "t_0_to_40": 0.82,
+    "t_40_to_m40": 1.65
+   },
+   "da15_b1.6": {
+    "pb2V": 0.074,
+    "p_degps": 42.5,
+    "t_0_to_40": 0.94,
+    "t_40_to_m40": 1.88
+   },
+   "da15_b1.8": {
+    "pb2V": 0.074,
+    "p_degps": 37.8,
+    "t_0_to_40": 1.06,
+    "t_40_to_m40": 2.12
+   },
+   "da20_b1.4": {
+    "pb2V": 0.099,
+    "p_degps": 64.8,
+    "t_0_to_40": 0.62,
+    "t_40_to_m40": 1.23
+   },
+   "da20_b1.6": {
+    "pb2V": 0.099,
+    "p_degps": 56.7,
+    "t_0_to_40": 0.71,
+    "t_40_to_m40": 1.41
+   },
+   "da20_b1.8": {
+    "pb2V": 0.099,
+    "p_degps": 50.4,
+    "t_0_to_40": 0.79,
+    "t_40_to_m40": 1.59
+   }
+  }
+ }
+}

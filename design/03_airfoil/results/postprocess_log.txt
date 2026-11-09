@@ -1,0 +1,46 @@
+RANKING ROBUSTNESS (rank under each weighting / Re band)
+airfoil                 mean   1   2   3   4   5   6   7
+S7075                    2.1   2   1   2   3   1   1   5
+NACA 4409                2.3   1   3   1   1   2   5   3
+S4061                    4.0   3   4   3   2   4  11   1
+HQ/W 2.5/9               5.9   4   2   8  10   3   2  12
+SA7038                   6.3   5   6   6   8   6   6   7
+E387                     7.4   6   9   5   7   8  15   2
+SD7037                   8.4   8   7  10  13   7   3  11
+MH32                     9.6  11   5  13  15   5   4  14
+SA7036                  10.6  10   8  12  14   9   8  13
+E214                    11.3   7  18   4   4  12  28   6
+SD7032                  14.1   9  17   9  11  16  29   8
+AG24                    14.4  15  10  18  18  14   7  19
+SD7080                  15.0  14  13  16  20  15   9  18
+GOE 417a                15.6  12  22   7   6  28  18  16
+S7012                   16.7  18  11  19  22  13  12  22
+NACA 4412               17.7  13  27  11  12  21  36   4
+RG15                    17.9  20  12  22  26  10  10  25
+S3021                   18.1  16  16  15  21  17  25  17
+Clark Y                 18.3  17  20  20   5  24  32  10
+E193                    19.1  19  26  14  19  20  27   9
+  case 1: baseline (slow, efficient, buildable) | Re 60-80k
+  case 2: equal weights | Re 60-80k
+  case 3: efficiency-heavy | Re 60-80k
+  case 4: safety/low-speed-heavy | Re 60-80k
+  case 5: build/robustness-heavy | Re 60-80k
+  case 6: baseline (slow, efficient, buildable) | Re 40-60k
+  case 7: baseline (slow, efficient, buildable) | Re 80-100k
+
+DAT files
+  S7075            149 pts  t=9.00%  TE=0.000%c  | TE0.5% effect @Re70k a=0/4/8: dCd=+6/-5/+15 e-4  dCl=+0.068/+0.054/+0.039
+  NACA4409         149 pts  t=9.01%  TE=0.189%c  | TE0.5% effect @Re70k a=0/4/8: dCd=+3/-1/+6 e-4  dCl=+0.006/+0.018/+0.012
+  SD7037           149 pts  t=9.21%  TE=0.000%c  | TE0.5% effect @Re70k a=0/4/8: dCd=+4/+3/+5 e-4  dCl=+0.046/+0.002/+0.015
+  HT14             149 pts  t=7.49%  TE=0.189%c  | TE0.5% effect @Re70k a=0/4/8: dCd=+3/+1/+8 e-4  dCl=+0.000/+0.002/+0.011
+  FLATPLATE-3pct   159 pts  t=3.00%  TE=0.300%c
+
+Re = V c / nu  (nu = 1.7e-5)
+V\c    0.08   0.10   0.12   0.14   0.16   0.18   0.20
+  5     24k    29k    35k    41k    47k    53k    59k
+  6     28k    35k    42k    49k    56k    64k    71k
+  7     33k    41k    49k    58k    66k    74k    82k
+  8     38k    47k    56k    66k    75k    85k    94k
+  9     42k    53k    64k    74k    85k    95k   106k
+ 10     47k    59k    71k    82k    94k   106k   118k
+ 12     56k    71k    85k    99k   113k   127k   141k

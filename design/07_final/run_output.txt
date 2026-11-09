@@ -1,0 +1,35 @@
+== 1. sizing loop
+ battery 3S 650 mAh
+  sized: AUW 603 g  x_cg 63.5 mm  x_np 80.5 mm  SM 12.0%  batt x 57 (bay -91..81)  Sh 232 cm2  Sv 119 cm2
+ battery 3S 850 mAh
+  sized: AUW 616 g  x_cg 63.5 mm  x_np 80.5 mm  SM 12.0%  batt x 59 (bay -88..78)  Sh 232 cm2  Sv 119 cm2
+== 2. aero
+  tail incidence i_t = 0.2 deg (body axis), wing i_w = 2.0 deg; Cm_de -0.0240/deg
+  CLmax: wing 1.164, trimmed aircraft 1.150 at alpha 8.5 deg; first stall at y = 241 mm (34% semispan); Vs = 6.94 m/s
+  polar fit CD0 0.0194, e 0.577; L/D max 15.3 at CL 0.57; min-sink CL 0.94
+== 3. propulsion / operating points
+  3S 650 mAh: AUW 603 g, level I 1.24 A, level-only 25.2 min, mission 23.5 min, beginner (25% climb) 14.0 min, static T 673 g
+  3S 850 mAh: AUW 616 g, level I 1.26 A, level-only 32.4 min, mission 30.4 min, beginner (25% climb) 17.9 min, static T 673 g
+  chosen battery: 3S 650 mAh
+  Stall (1g, trimmed)                  V  6.94 CL 1.150 a   7.0 L/D  12.0 sink 0.58 Preq  3.4 W  I 1.16 A  de -2.6
+  Hand launch                          V  7.00 CL 1.129 a   6.8 L/D  12.1 sink 0.58 Preq  3.4 W  I 1.16 A  de -2.5
+  Minimum sink                         V  7.68 CL 0.938 a   4.5 L/D  13.8 sink 0.56 Preq  3.3 W  I 1.16 A  de -1.4
+  Best L/D                             V  9.85 CL 0.570 a   1.0 L/D  15.3 sink 0.64 Preq  3.8 W  I 1.32 A  de +0.7
+  Operating point (low-speed loiter)   V  9.02 CL 0.681 a   2.0 L/D  15.1 sink 0.60 Preq  3.5 W  I 1.24 A  de +0.1
+  Cruise                               V 11.76 CL 0.400 a  -0.7 L/D  14.0 sink 0.84 Preq  5.0 W  I 1.60 A  de +1.5
+== 4. performance
+  bank 30: width @V_op 28.7 m (CLmax/CL 1.46, Vs_turn 7.45), width @1.2Vs_turn 28.2 m, I 1.33 A
+  bank 35: width @V_op 23.7 m (CLmax/CL 1.38, Vs_turn 7.66), width @1.2Vs_turn 24.6 m, I 1.37 A
+  bank 40: width @V_op 19.8 m (CLmax/CL 1.29, Vs_turn 7.92), width @1.2Vs_turn 22.0 m, I 1.43 A
+  bank 45: width @V_op 16.6 m (CLmax/CL 1.20, Vs_turn 8.25), width @1.2Vs_turn 20.0 m, I 1.51 A
+  static T 673 g (T/W 1.12), I 9.2 A; launch 7 m/s T 534 g a 7.9 m/s2
+  best climb 7.57 m/s at 12.5 m/s (37 deg), I 9.1 A; to 20 m: 2.4 s, 24 m ground
+  glide from 10 m: 153 m at best L/D, 151 m at V_op, 103 m at 15.8 m/s, 52 m with -25 deg spoilerons at V_op (L/D 5.2)
+  roll: Cl_da 0.00944/deg, Clp -0.590; pb/2V = 0.0160/deg -> 0.08 needs 5.0 deg aileron (p = 59 deg/s at V_op)
+  lateral: Clb -0.0903, Cnb 0.0578, Clr 0.133, Cnr -0.0818; spiral E -0.00030 (divergent, lambda +0.008 1/s, t2 88 s); DR wn 3.4 rad/s zeta 0.19
+  print density 0.65: AUW 573 g, wing 228 g, W/S 28.7 N/m2, SM 11.5% (battery to 51 mm for 12%), Vs 6.76
+  print density 0.75: AUW 603 g, wing 252 g, W/S 30.2 N/m2, SM 12.0% (battery to 57 mm for 12%), Vs 6.94
+  print density 0.85: AUW 633 g, wing 277 g, W/S 31.7 N/m2, SM 12.4% (battery to 64 mm for 12%), Vs 7.11
+  spar: {'mass': 0.04455909356145618, 'inner': 'CF tube 6x4', 'outer': 'CF tube 5x3', 'L_in': 0.48, 'L_out': 0.43899999999999995, 'eta_step': 0.34285714285714286, 'sigma_root': 309569366.52467144, 'sigma_step': 180872174.0317952, 'sigma_wire': 728847871.6540487, 'M_root': 5.267929591439417, 'M_break': 1.9319707568021478}
+saved final_results.json, aero_performance.png, three_view.png
+wrote design_spec.md
